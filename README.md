@@ -78,8 +78,8 @@ https://github.com/AnatoleLucet/reactive-framework/blob/main/fixtures/svelte/src
   import { createSignal, createEffect } from "../../../src/signal";
 
   // -- count
-  const createCount = (initial) => {
-    const [count, setCount] = createSignal(initial);
+  const createCount = () => {
+    const [count, setCount] = createSignal(0);
 
     createEffect(() => {
       console.log("new count", count());
